@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <nav>
+            <a href="/length">Length</a>
+            <a href="/weight">Weight</a>
+            <a href="/temperature">Temperature</a>
+        </nav>
+
+        <h2>Weight Converter</h2>
+        
+        <form method="POST">
+            <div class="form-group">
+                <label for="value">Value:</label>
+                <input type="number" step="any" id="value" name="value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="from_unit">From:</label>
+                <select id="from_unit" name="from_unit">
+                    <option value="milligram">Milligram</option>
+                    <option value="gram" selected>Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="ounce">Ounce</option>
+                    <option value="pound">Pound</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="to_unit">To:</label>
+                <select id="to_unit" name="to_unit">
+                    <option value="milligram">Milligram</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram" selected>Kilogram</option>
+                    <option value="ounce">Ounce</option>
+                    <option value="pound">Pound</option>
+                </select>
+            </div>
+
+            <button type="submit">Convert</button>
+        </form>
+
+        {% if result is not none %}
+        <div class="result">
+            <h3>Result: {{ result }}</h3>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
