@@ -1,6 +1,6 @@
 # Unit Converter Web App
 
-A simple, beginner-friendly web application that converts between different units of measurement. Built with Python and Flask.
+A simple, beginner-friendly web application that converts between different units of measurement. Built with Python and Flas.
 
 ## Features
 
