@@ -2,7 +2,7 @@
 
 A simple, beginner-friendly web application that converts between different units of measurement. Built with Python and Flask.
 
-## Features
+# Features
 
 - **Length Converter** - Convert between millimeter, centimeter, meter, kilometer, inch, foot, yard, and mile
 - **Weight Converter** - Convert between milligram, gram, kilogram, ounce, and pound
