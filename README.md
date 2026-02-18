@@ -62,7 +62,7 @@ Unit-Converter-Web-App/
 └── README.md
 ```
 
-## How It Works
+# How It Works
 
 The app uses Flask routes to handle form submissions. When you submit a conversion:
 1. The form sends a POST request to the current page
@@ -75,7 +75,7 @@ All conversions use a base unit approach:
 - **Weight:** Converts through grams
 - **Temperature:** Uses direct formulas (not ratios)
 
-## License
+# License
 
 This project is open source and available under the MIT License.
 https://roadmap.sh/projects/unit-converter
